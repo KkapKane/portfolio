@@ -11,7 +11,7 @@ export default function NavBar(){
         
         <div className='rightLinks'>
           <Link to="/" className='home'>Home</Link>
-          <div className='hide'>Projects</div>
+          <Link to="/projects" className='hide'>Projects</Link>
           <div className='hide'>Skills</div>
           <Link to="/contact" className='hide'>Contact</Link>
        

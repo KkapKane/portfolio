@@ -20,6 +20,11 @@
         font-size: .8rem;
         letter-spacing: 3px;
         font-weight: 600;
+        height: 100%;
+
+            
+        
+      
     }
     .skills{
           @extend .github;
@@ -30,6 +35,11 @@
     .contact {
         color: inherit;
         text-decoration: none;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
     }
 
 }

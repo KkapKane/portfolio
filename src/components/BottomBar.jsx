@@ -7,12 +7,13 @@ import '../styles/BottomBar.scss'
 export default function BottomBar() {
     return (
       <div className='BottomBar'>
+          <a href='https://github.com/KkapKane' >
         <div className='github'>
           <AiOutlineGithub size={30} />
-          <a href='https://github.com/KkapKane'>GitHub
+            <div >GitHub</div>
           
-          </a>
         </div>
+          </a>
         <div className='skills'>
           <RxListBullet size={30} />
           Skills

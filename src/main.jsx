@@ -4,10 +4,9 @@ import { BrowserRouter } from "react-router-dom";
 import App from './App'
 import './styles/styles.scss'
 
-ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
-   <BrowserRouter >
 
-     <App />
-   </BrowserRouter>
-  
-)
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>
+);

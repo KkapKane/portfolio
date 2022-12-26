@@ -10,8 +10,8 @@ import view from "../assets/view.jpg";
 
 
 export default function HomePage() {
-  const [clicked, setClicked] = useState<string | null>("");
-  const handleClick = (pName: any) => {
+  const [clicked, setClicked] = useState("");
+  const handleClick = (pName) => {
     setClicked(pName);
     if(clicked != ""){
       setClicked("")

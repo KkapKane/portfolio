@@ -62,10 +62,7 @@
     z-index: 99;
     
   }
-  .dev {
-    color: $c2;
-    filter: drop-shadow(.1em .2em .2em black);
-  }
+  
 
 
   .title {
@@ -210,7 +207,8 @@
     }
     .dev {
       color: $c1;
-      filter: drop-shadow(.1em .2em .2em $c3);
+      font-size: 2.4rem;
+      
       animation-delay: 4s;
       animation-fill-mode: forwards;
       animation: Spread 4s;
