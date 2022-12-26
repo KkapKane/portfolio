@@ -1,0 +1,284 @@
+@import "variables.scss";
+
+.HomePage {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  background-color: $c2;
+  color: $c1;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  .bg {
+    display: none;
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    // background: url("https://images.pexels.com/photos/7974/pexels-photo.jpg");
+    background-size: cover;
+    background-position: center center;
+   
+    overflow: hidden;
+    justify-content: space-evenly;
+
+    .cloud{
+      color: $c3;
+      position: absolute;
+      height: 30%;
+      right: 0;
+      top: 28%;
+      filter: drop-shadow(.1em .1em .2em white);
+      z-index: 99;
+    }
+    .cloud2{
+      position: absolute;
+      color: $c3;
+      right: 30%;
+      top: 22%;
+      z-index: 0;
+      filter: drop-shadow(.1em .1em .2em white);
+    }
+    .rocket {
+      color: $c1;
+      position: absolute;
+      right: 15%;
+     
+      top: 29%;
+      transform: rotate(316deg);
+    }
+  }
+  p {
+    padding: 0;
+    margin: 0;
+
+    font-size: 1rem;
+    font-weight: 600;
+    z-index: 99;
+    
+  }
+  .dev {
+    color: $c2;
+    filter: drop-shadow(.1em .2em .2em black);
+  }
+
+
+  .title {
+    padding: 1rem;
+    padding-left: 0;
+    z-index: 99;
+    font-family: 'Roboto';
+    
+    margin: 1rem;
+    font-size: 3rem;
+    line-height: 2.8rem;
+    letter-spacing: 0.1ch;
+    font-weight: 600;
+  }
+  .Carousel {
+    padding-bottom: 5rem;
+    
+    .project {
+      position: relative;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border: 4px double $c1;
+
+      img {
+        filter: brightness(70%);
+        height: 200px;
+      }
+    }
+    .ProjectName {
+      color: $c1;
+      font-size: 1.2rem;
+      text-align: center;
+    }
+
+    .links {
+      display: flex;
+
+      justify-content: space-around;
+      align-items: center;
+      background-color: rgba($color: #000000, $alpha: 0.8);
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      .gitLink {
+        display: flex;
+        margin-left: auto;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 80%;
+      
+      }
+      .liveLink {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-left: 1px solid white;
+        
+        margin-right: auto;
+       width: 100%;
+        height: 80%;
+      }
+
+      a {
+        font-size: 1.3rem;
+        text-decoration: none;
+        color: rgb(253, 254, 255);
+
+        padding: 0.5rem;
+      }
+    }
+  }
+  #myWork {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 1rem;
+
+    .t2 {
+      font-size: 0.7rem;
+    }
+  }
+}
+
+@media screen and (min-width: 900px) {
+
+  .bg {
+    display: inline-block !important;
+    position: absolute;
+    z-index: 9;
+    
+    animation: cubic-bezier(0.455, 0.03, 0.515, 0.955) transitionIn 4s;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+  }
+ .HomePage {
+  background-color: $c3;
+  overflow: hidden !important;
+  .overFlowHidden {
+    overflow: hidden;
+  
+  }
+  
+ .StaggerBox{
+  display: flex;
+  flex-direction: column;
+  
+  height: 50%;
+  
+ }
+
+ 
+  
+
+ }
+  .hero {
+  
+  height: 60% !important;
+  overflow: hidden !important;
+  
+ text-align: center;
+  z-index: 99 !important;
+  
+
+  color: $c1;
+ 
+   
+     .title{
+        font-size: 4rem;
+        overflow: hidden !important;
+     }
+    p{
+        font-size: 2rem;
+        letter-spacing: .5ch;
+        
+    }
+    .dev {
+      color: $c1;
+      filter: drop-shadow(.1em .2em .2em $c3);
+      animation-delay: 4s;
+      animation-fill-mode: forwards;
+      animation: Spread 4s;
+        
+    }
+  }
+  .Carousel {
+    display: none;
+    padding: 0 !important;
+    background-color: $c2 !important;
+   
+    
+  }
+  .project {
+    height: 70%;
+    width: 90%;
+    box-shadow: 3px 3px 3px  $c1;
+    transition: 1000ms;
+
+  
+    
+    
+  }
+  img {
+    width: 100% !important;
+    height: 100% !important;
+  }
+  .ProjectName {
+        font-size: 2rem !important;
+        letter-spacing: .2ch;
+    }
+    .cloud{
+      display: none;
+    }
+    .cloud2{
+      display: none;
+    }
+    .rocket {
+     display: none;
+    }
+}
+
+
+@keyframes transitionIn {
+  from {
+    
+    scale: 1;
+   clip-path: polygon(50% 0%, 100% 0, 100% 60%, 100% 100%, 0 100%, 0% 60%, 0 0);
+   
+    
+  }
+
+  to {
+    
+  
+   clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+    width: 0%;
+    scale: .6;
+   
+    
+  }
+}
+
+@keyframes Spread {
+  from {
+    letter-spacing: 0;
+  }
+  to {
+    letter-spacing: 2;
+  }
+}
