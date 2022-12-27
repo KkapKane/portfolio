@@ -40,6 +40,9 @@ export default function Projects() {
  ]);
 
  function handleClick (direction) {
+  if(currentImg <= 0){
+    setCurrentImg(5)
+  }
   direction  == "forward" ? setCurrentImg(prev => prev + 1):
   setCurrentImg(prev => prev - 1) 
  }
@@ -51,6 +54,8 @@ export default function Projects() {
       animate={{ y: "0%" }}
       transition={{ duration: 0.75, ease: "easeOut" }}
       exit={{ opacity: 1 }}
+
+      style={{backgroundImage:`url(${project[currentImg % 5].image})` }}
     >
       <div className='carousel'>
       <div className="title">{project[currentImg % 5].ProjectName}</div>
@@ -59,14 +64,14 @@ export default function Projects() {
         <img src={project[currentImg % 5].image} alt='' />
         <div className="preview">
 
-        <a href={project[currentImg % 5].gh} className="gitlink">
+        <a href={project[currentImg % 5].gh} className="gitlink"target="_blank" rel="noopener noreferrer">
           <AiOutlineGithub size={50}/>
           GitHub</a>
-          <a href={project[currentImg % 5].preview}>Preview</a>
+          <a href={project[currentImg % 5].preview} target="_blank" rel="noopener noreferrer">Preview</a>
         </div>
         </div>
         <div className="buttonContainer">
-        <button onClick={() => handleClick("forward")}>Previous</button>
+        <button onClick={() => handleClick("backward")}>Previous</button>
         <button onClick={() => handleClick("forward")}>Next</button>
         </div>
       </div>

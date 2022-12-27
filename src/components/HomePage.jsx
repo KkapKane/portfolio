@@ -80,10 +80,10 @@ export default function HomePage() {
                 style={clicked == "youtube" ? {} : { display: "none" }}
               >
                 <div className='gitLink'>
-                  <a href='https://github.com/KkapKane/youtube-clone'>Github</a>
+                  <a href='https://github.com/KkapKane/youtube-clone' target="_blank" rel="noopener noreferrer">Github</a>
                 </div>
                 <div className='liveLink'>
-                  <a href='https://kkapkane.github.io/youtube-clone/'>
+                  <a href='https://kkapkane.github.io/youtube-clone/' target="_blank" rel="noopener noreferrer">
                     Live Preview
                   </a>
                 </div>
@@ -108,10 +108,10 @@ export default function HomePage() {
                 style={clicked == "clothingStore" ? {} : { display: "none" }}
               >
                 <div className='gitLink'>
-                  <a href='https://github.com/KkapKane/shopping-cart'>Github</a>
+                  <a href='https://github.com/KkapKane/shopping-cart' target="_blank" rel="noopener noreferrer">Github</a>
                 </div>
                 <div className='liveLink'>
-                  <a href='https://kkapkane.github.io/shopping-cart/'>
+                  <a href='https://kkapkane.github.io/shopping-cart/' target="_blank" rel="noopener noreferrer">
                     Live Preview
                   </a>
                 </div>
@@ -133,12 +133,12 @@ export default function HomePage() {
                 style={clicked == "Restaurant" ? {} : { display: "none" }}
               >
                 <div className='gitLink'>
-                  <a href='https://github.com/KkapKane/restaurant-page'>
+                  <a href='https://github.com/KkapKane/restaurant-page' target="_blank" rel="noopener noreferrer">
                     Github
                   </a>
                 </div>
                 <div className='liveLink'>
-                  <a href='https://kkapkane.github.io/restaurant-page/'>
+                  <a href='https://kkapkane.github.io/restaurant-page/' target="_blank" rel="noopener noreferrer">
                     Live Preview
                   </a>
                 </div>
@@ -161,12 +161,12 @@ export default function HomePage() {
                 style={clicked == "memGame" ? {} : { display: "none" }}
               >
                 <div className='gitLink'>
-                  <a href='https://github.com/KkapKane/react-memory-game'>
+                  <a href='https://github.com/KkapKane/react-memory-game' target="_blank" rel="noopener noreferrer">
                     Github
                   </a>
                 </div>
                 <div className='liveLink'>
-                  <a href='https://kkapkane.github.io/react-memory-game/'>
+                  <a href='https://kkapkane.github.io/react-memory-game/' target="_blank" rel="noopener noreferrer">
                     Live Preview
                   </a>
                 </div>
@@ -185,10 +185,10 @@ export default function HomePage() {
                 style={clicked == "cvMaker" ? {} : { display: "none" }}
               >
                 <div className='gitLink'>
-                  <a href='https://github.com/KkapKane/cv-project'>Github</a>
+                  <a href='https://github.com/KkapKane/cv-project'target="_blank" rel="noopener noreferrer" >Github</a>
                 </div>
                 <div className='liveLink'>
-                  <a href='https://kkapkane.github.io/cv-project/'>
+                  <a href='https://kkapkane.github.io/cv-project/'target="_blank" rel="noopener noreferrer" >
                     Live Preview
                   </a>
                 </div>

@@ -10,9 +10,9 @@ export default function NavBar(){
         <div className='Name'>KL</div>
         
         <div className='rightLinks'>
-          <Link to="/" className='home'>Home</Link>
+          <Link to="/" className='hide'>Home</Link>
           <Link to="/projects" className='hide'>Projects</Link>
-          <div className='hide'>Skills</div>
+        
           <Link to="/contact" className='hide'>Contact</Link>
        
         </div>
