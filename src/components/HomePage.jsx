@@ -38,7 +38,7 @@ export default function HomePage() {
             initial={{ y: "150%" }}
             transition={{ delay: 0.5, duration: 0.5 }}
           >
-            I build Websites
+            Hi, I'm Khanh
           </m.div>
         </m.div>
         <m.div
