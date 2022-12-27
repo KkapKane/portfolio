@@ -1,51 +1,46 @@
 @import "variables.scss";
 
 .BottomBar {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 4rem;
+
+  position: fixed;
+  background-color: $c4;
+  color: $c1;
+  bottom: 0;
+
+  .github {
     display: flex;
-    justify-content: space-around;
-    width: 100%;
-    height: 4rem;
-    
-    position: fixed;
-    background-color: $c4;
-    color: $c1;
-    bottom: 0;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+    align-items: center;
+    font-size: 0.8rem;
+    letter-spacing: 3px;
+    font-weight: 600;
+    height: 100%;
+  }
+  .skills {
+    @extend .github;
+  }
+  .contact {
+    @extend .github;
+  }
+  .contact {
+    color: inherit;
+    text-decoration: none;
+  }
 
-    .github{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: .5rem;
-        align-items: center;
-        font-size: .8rem;
-        letter-spacing: 3px;
-        font-weight: 600;
-        height: 100%;
-
-            
-        
-      
-    }
-    .skills{
-          @extend .github;
-    }
-    .contact {
-       @extend .github;
-    }
-    .contact {
-        color: inherit;
-        text-decoration: none;
-    }
-
-    a {
-        text-decoration: none;
-        color: inherit;
-    }
-
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
 }
 
 @media screen and (min-width: 900px) {
- .BottomBar{
+  .BottomBar {
     display: none;
- }  
+  }
 }

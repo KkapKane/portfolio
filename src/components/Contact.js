@@ -1,8 +1,7 @@
-import '../styles/Contact.scss'
-import { motion as m} from 'framer-motion'
-import { MdOutlineEmail } from 'react-icons/md'
+import "../styles/Contact.scss";
+import { motion as m } from "framer-motion";
+import { MdOutlineEmail } from "react-icons/md";
 import { container, item } from "./animation";
-
 
 export default function Contact() {
   return (

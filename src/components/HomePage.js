@@ -7,14 +7,12 @@ import { motion as m } from "framer-motion";
 import { container, item } from "./animation";
 import view from "../assets/view.jpg";
 
-
-
 export default function HomePage() {
   const [clicked, setClicked] = useState("");
   const handleClick = (pName) => {
     setClicked(pName);
-    if(clicked != ""){
-      setClicked("")
+    if (clicked !== "") {
+      setClicked("");
     }
   };
 
@@ -74,16 +72,27 @@ export default function HomePage() {
               <img
                 width='100%'
                 src='https://s3.gifyu.com/images/Untitled.png'
+                alt=''
               />
               <div
                 className='links'
-                style={clicked == "youtube" ? {} : { display: "none" }}
+                style={clicked === "youtube" ? {} : { display: "none" }}
               >
                 <div className='gitLink'>
-                  <a href='https://github.com/KkapKane/youtube-clone' target="_blank" rel="noopener noreferrer">Github</a>
+                  <a
+                    href='https://github.com/KkapKane/youtube-clone'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                  >
+                    Github
+                  </a>
                 </div>
                 <div className='liveLink'>
-                  <a href='https://kkapkane.github.io/youtube-clone/' target="_blank" rel="noopener noreferrer">
+                  <a
+                    href='https://kkapkane.github.io/youtube-clone/'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                  >
                     Live Preview
                   </a>
                 </div>
@@ -102,16 +111,27 @@ export default function HomePage() {
               <img
                 width='100%'
                 src='https://s9.gifyu.com/images/ArashiyamaHP.png'
+                alt=''
               />
               <div
                 className='links'
-                style={clicked == "clothingStore" ? {} : { display: "none" }}
+                style={clicked === "clothingStore" ? {} : { display: "none" }}
               >
                 <div className='gitLink'>
-                  <a href='https://github.com/KkapKane/shopping-cart' target="_blank" rel="noopener noreferrer">Github</a>
+                  <a
+                    href='https://github.com/KkapKane/shopping-cart'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                  >
+                    Github
+                  </a>
                 </div>
                 <div className='liveLink'>
-                  <a href='https://kkapkane.github.io/shopping-cart/' target="_blank" rel="noopener noreferrer">
+                  <a
+                    href='https://kkapkane.github.io/shopping-cart/'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                  >
                     Live Preview
                   </a>
                 </div>
@@ -127,18 +147,27 @@ export default function HomePage() {
               <img
                 width='100%'
                 src='https://s9.gifyu.com/images/restaurant.png'
+                alt=''
               />
               <div
                 className='links'
-                style={clicked == "Restaurant" ? {} : { display: "none" }}
+                style={clicked === "Restaurant" ? {} : { display: "none" }}
               >
                 <div className='gitLink'>
-                  <a href='https://github.com/KkapKane/restaurant-page' target="_blank" rel="noopener noreferrer">
+                  <a
+                    href='https://github.com/KkapKane/restaurant-page'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                  >
                     Github
                   </a>
                 </div>
                 <div className='liveLink'>
-                  <a href='https://kkapkane.github.io/restaurant-page/' target="_blank" rel="noopener noreferrer">
+                  <a
+                    href='https://kkapkane.github.io/restaurant-page/'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                  >
                     Live Preview
                   </a>
                 </div>
@@ -154,19 +183,28 @@ export default function HomePage() {
               <img
                 width='100%'
                 src='https://s9.gifyu.com/images/memoryGame.png'
+                alt=''
               />
 
               <div
                 className='links'
-                style={clicked == "memGame" ? {} : { display: "none" }}
+                style={clicked === "memGame" ? {} : { display: "none" }}
               >
                 <div className='gitLink'>
-                  <a href='https://github.com/KkapKane/react-memory-game' target="_blank" rel="noopener noreferrer">
+                  <a
+                    href='https://github.com/KkapKane/react-memory-game'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                  >
                     Github
                   </a>
                 </div>
                 <div className='liveLink'>
-                  <a href='https://kkapkane.github.io/react-memory-game/' target="_blank" rel="noopener noreferrer">
+                  <a
+                    href='https://kkapkane.github.io/react-memory-game/'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                  >
                     Live Preview
                   </a>
                 </div>
@@ -179,16 +217,30 @@ export default function HomePage() {
           <Carousel.Item>
             {/* -------------------------------------------------------------------- */}
             <div className='project' onClick={() => handleClick("cvMaker")}>
-              <img width='100%' src='https://s9.gifyu.com/images/cvMaker.png' />
+              <img
+                width='100%'
+                src='https://s9.gifyu.com/images/cvMaker.png'
+                alt=''
+              />
               <div
                 className='links'
-                style={clicked == "cvMaker" ? {} : { display: "none" }}
+                style={clicked === "cvMaker" ? {} : { display: "none" }}
               >
                 <div className='gitLink'>
-                  <a href='https://github.com/KkapKane/cv-project'target="_blank" rel="noopener noreferrer" >Github</a>
+                  <a
+                    href='https://github.com/KkapKane/cv-project'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                  >
+                    Github
+                  </a>
                 </div>
                 <div className='liveLink'>
-                  <a href='https://kkapkane.github.io/cv-project/'target="_blank" rel="noopener noreferrer" >
+                  <a
+                    href='https://kkapkane.github.io/cv-project/'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                  >
                     Live Preview
                   </a>
                 </div>
