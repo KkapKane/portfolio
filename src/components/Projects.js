@@ -13,6 +13,12 @@ export default function Projects() {
       preview: "https://kkapkane.github.io/youtube-clone/",
     },
     {
+      ProjectName: "R3F Dancing Game",
+      image: "https://s3.gifyu.com/images/audition5ebd69d440cfe419.png",
+      gh: "https://github.com/KkapKane/R3F-Game",
+      preview: "https://kkapkane.github.io/R3F-Game/",
+    },
+    {
       ProjectName: "Mock Clothing Store",
       image: "https://s9.gifyu.com/images/ArashiyamaHP.png",
       gh: "https://github.com/KkapKane/shopping-cart",
@@ -23,12 +29,6 @@ export default function Projects() {
       image: "https://s9.gifyu.com/images/restaurant.png",
       gh: "https://github.com/KkapKane/restaurant-page",
       preview: "https://kkapkane.github.io/restaurant-page/",
-    },
-    {
-      ProjectName: "React-Memory-Game",
-      image: "https://s9.gifyu.com/images/memoryGame.png",
-      gh: "https://github.com/KkapKane/react-memory-game",
-      preview: "https://kkapkane.github.io/react-memory-game/",
     },
     {
       ProjectName: "Cv-Maker",
