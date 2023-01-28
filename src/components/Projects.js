@@ -7,6 +7,12 @@ export default function Projects() {
   const [currentImg, setCurrentImg] = useState(0);
   const [project, setProject] = useState([
     {
+      ProjectName: "Windows Clone",
+      image: "https://s9.gifyu.com/images/windowsClone.png",
+      gh: "https://github.com/KkapKane/ReactTS-windows-clone",
+      preview: "https://kkapkane.github.io/ReactTS-windows-clone/",
+    },
+    {
       ProjectName: "Youtube Clone",
       image: "https://s3.gifyu.com/images/Untitled.png",
       gh: "https://github.com/KkapKane/youtube-clone",
@@ -29,12 +35,6 @@ export default function Projects() {
       image: "https://s9.gifyu.com/images/restaurant.png",
       gh: "https://github.com/KkapKane/restaurant-page",
       preview: "https://kkapkane.github.io/restaurant-page/",
-    },
-    {
-      ProjectName: "Cv-Maker",
-      image: "https://s9.gifyu.com/images/cvMaker.png",
-      gh: "https://github.com/KkapKane/cv-project",
-      preview: "https://kkapkane.github.io/cv-project/",
     },
   ]);
 
