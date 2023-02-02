@@ -68,6 +68,44 @@ export default function HomePage() {
         <Carousel cols={2} rows={1} gap={10} loop={true}>
           <Carousel.Item>
             {/* -------------------------------------------------------------------- */}
+            <div
+              className='project'
+              onClick={() => handleClick("windowsClone")}
+            >
+              <img
+                width='100%'
+                src='https://s9.gifyu.com/images/windowsClone.png'
+                alt=''
+              />
+              <div
+                className='links'
+                style={clicked === "windowsClone" ? {} : { display: "none" }}
+              >
+                <div className='gitLink'>
+                  <a
+                    href='https://github.com/KkapKane/ReactTS-windows-clone'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                  >
+                    Github
+                  </a>
+                </div>
+                <div className='liveLink'>
+                  <a
+                    href='https://kkapkane.github.io/ReactTS-windows-clone/'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                  >
+                    Live Preview
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className='ProjectName'>Windows Clone</div>
+            {/* -------------------------------------------------------------------- */}
+          </Carousel.Item>
+          <Carousel.Item>
+            {/* -------------------------------------------------------------------- */}
             <div className='project' onClick={() => handleClick("youtube")}>
               <img
                 width='100%'
@@ -98,7 +136,7 @@ export default function HomePage() {
                 </div>
               </div>
             </div>
-            <div className='ProjectName'>YouTube Clone</div>
+            <div className='ProjectName'>YouTube Look-alike</div>
             {/* -------------------------------------------------------------------- */}
           </Carousel.Item>
 
@@ -179,20 +217,20 @@ export default function HomePage() {
 
           <Carousel.Item>
             {/* -------------------------------------------------------------------- */}
-            <div className='project' onClick={() => handleClick("memGame")}>
+            <div className='project' onClick={() => handleClick("rhythmGame")}>
               <img
                 width='100%'
-                src='https://s9.gifyu.com/images/memoryGame.png'
+                src='https://s3.gifyu.com/images/audition5ebd69d440cfe419.png'
                 alt=''
               />
 
               <div
                 className='links'
-                style={clicked === "memGame" ? {} : { display: "none" }}
+                style={clicked === "rhythmGame" ? {} : { display: "none" }}
               >
                 <div className='gitLink'>
                   <a
-                    href='https://github.com/KkapKane/react-memory-game'
+                    href='https://github.com/KkapKane/R3F-Game'
                     target='_blank'
                     rel='noopener noreferrer'
                   >
@@ -201,7 +239,7 @@ export default function HomePage() {
                 </div>
                 <div className='liveLink'>
                   <a
-                    href='https://kkapkane.github.io/react-memory-game/'
+                    href='https://kkapkane.github.io/R3F-Game/'
                     target='_blank'
                     rel='noopener noreferrer'
                   >
@@ -210,43 +248,7 @@ export default function HomePage() {
                 </div>
               </div>
             </div>
-            <div className='ProjectName'>React-Memory-Game</div>
-            {/* -------------------------------------------------------------------- */}
-          </Carousel.Item>
-
-          <Carousel.Item>
-            {/* -------------------------------------------------------------------- */}
-            <div className='project' onClick={() => handleClick("cvMaker")}>
-              <img
-                width='100%'
-                src='https://s9.gifyu.com/images/cvMaker.png'
-                alt=''
-              />
-              <div
-                className='links'
-                style={clicked === "cvMaker" ? {} : { display: "none" }}
-              >
-                <div className='gitLink'>
-                  <a
-                    href='https://github.com/KkapKane/cv-project'
-                    target='_blank'
-                    rel='noopener noreferrer'
-                  >
-                    Github
-                  </a>
-                </div>
-                <div className='liveLink'>
-                  <a
-                    href='https://kkapkane.github.io/cv-project/'
-                    target='_blank'
-                    rel='noopener noreferrer'
-                  >
-                    Live Preview
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className='ProjectName'>CV Maker</div>
+            <div className='ProjectName'>Rhythm Game</div>
             {/* -------------------------------------------------------------------- */}
           </Carousel.Item>
         </Carousel>
